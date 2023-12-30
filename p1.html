@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINDOW</title>
+</head>
+<body>
+    <center>
+        <h1>WINDOW</h1>
+    </center>
+    <hr>
+
+    <script>
+        let Nethra = 100; // Global variables or window.Nethra
+
+        function whoisThis(){
+            let Nethra = 200; // Local Variable
+            let Vasantha = 400;
+            window.lakshmi = 500;
+
+            alert("Local Variable :" + Nethra);
+            alert("Local Variable :" + Vasantha);
+            alert("Global Variable :" + this.Nethra);
+            alert("Global Variable :" + lakshmi);
+        }
+        whoisThis();
+
+        function whoamI(){
+            document.write("This is whoamI function : " + lakshmi);
+        }
+        whoamI();
+    </script>
+</body>
+</html>
